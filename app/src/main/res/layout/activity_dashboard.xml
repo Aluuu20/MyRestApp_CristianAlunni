@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+    <ImageButton
+        android:id="@+id/imgCreate"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/add"
+        app:layout_constraintEnd_toStartOf="@+id/editTextText"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgRead"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/open_book"
+        app:layout_constraintEnd_toStartOf="@+id/editTextText2"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="202dp" />
+
+    <ImageButton
+        android:id="@+id/imgUpdate"
+        android:layout_width="137dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="24dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/refresh_page_option"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="387dp" />
+
+    <ImageButton
+        android:id="@+id/imgDelete"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/delete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgUpdate" />
+
+    <EditText
+        android:id="@+id/editTextText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Delete"
+        tools:layout_editor_absoluteX="185dp"
+        tools:layout_editor_absoluteY="668dp" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Read"
+        tools:layout_editor_absoluteX="185dp"
+        tools:layout_editor_absoluteY="307dp" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Update"
+        tools:layout_editor_absoluteX="185dp"
+        tools:layout_editor_absoluteY="482dp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Create "
+        tools:layout_editor_absoluteX="185dp"
+        tools:layout_editor_absoluteY="121dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
