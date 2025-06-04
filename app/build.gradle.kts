@@ -48,10 +48,20 @@ dependencies {
     implementation(libs.androidx.annotation)
     implementation(libs.androidx.lifecycle.livedata.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation("androidx.webkit:webkit:1.8.0")
+    implementation("com.android.volley:volley:1.2.1")
+    implementation ("com.google.code.gson:gson:2.10.1")
+    implementation(libs.gson)
+    implementation(libs.glide)
+
+
+
+
+
 
 
 }

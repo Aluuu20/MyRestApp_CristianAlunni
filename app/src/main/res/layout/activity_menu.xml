@@ -7,40 +7,50 @@
     android:layout_height="match_parent"
     tools:context=".MenuActivity">
 
+
     <ImageButton
-        android:id="@+id/imageButtonCloud"
-        android:layout_width="212dp"
-        android:layout_height="175dp"
+        android:id="@+id/idbtnDashboard"
+        android:layout_width="186dp"
+        android:scaleType="fitCenter"
+
+        android:layout_height="143dp"
+        android:contentDescription="clicca"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.188"
+        app:layout_constraintVertical_bias="0.179"
         app:srcCompat="@drawable/download_removebg_preview" />
 
-    <Button
-        android:id="@+id/idbtnClicca"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Clicca"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonCloud" />
 
-    <Button
-        android:id="@+id/button3"
+
+    <ImageButton
+        android:id="@+id/idbtnWebView"
+        android:scaleType="fitCenter"
+        android:layout_width="278dp"
+        android:layout_height="192dp"
+        android:layout_marginTop="48dp"
+        android:contentDescription="clicca"
+        app:layout_constraintTop_toBottomOf="@+id/idbtnDashboard"
+        app:srcCompat="@drawable/png_clipart_netflix_full_logo_tech_companies_thumbnail_removebg_preview"
+        tools:layout_editor_absoluteX="75dp" />
+
+    <ImageButton
+        android:id="@+id/idbtnSearch"
         android:layout_width="152dp"
         android:layout_height="112dp"
-        android:background="@drawable/ic_launcher_foreground"
+        android:layout_marginBottom="56dp"
+        android:contentDescription="clicca"
         android:lineSpacingExtra="8sp"
+        android:scaleType="fitCenter"
         android:text="Android"
         android:textAlignment="center"
         android:textSize="@dimen/activity_vertical_margin"
-        app:iconTint="@color/design_default_color_error"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonCloud" />
+        app:srcCompat="@drawable/copilot_20250603_131155" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
